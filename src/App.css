@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  /* min-height: 400vh; */
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  color: white;
+}

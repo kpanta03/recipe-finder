@@ -1,0 +1,393 @@
+
+.navbar {
+    font-weight: bold;
+    padding-top: 2rem;
+    /* border: 1px solid green; */
+    font-family: 'Amatica SC', sans-serif;
+    font-size: 1.9rem;
+    /* box-shadow: 0 4px 8px white; */
+
+
+
+}
+
+.nav-link,
+.navbar-brand {
+    color: white !important;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* box-shadow: 0 4px 8px white; */
+}
+
+.nav-link:hover {
+    color: #DC143C !important;
+    /* Pink hover color */
+    transform: scale(1.1);
+}
+
+
+.nav-link.active {
+    color: #DC143C !important;
+    /* Pink color for active link */
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #DC143C;
+    /* Underline effect */
+    padding-bottom: 5px;
+}
+
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-item {
+    margin-left: 1.9rem;
+}
+
+
+
+.icon {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.navbar-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    color: white;
+    z-index: 1000;
+    text-decoration: none;
+    /* margin-top: 4rem; */
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+}
+
+.left-nav {
+    /* border: 1px solid red; */
+    margin-left: 5rem;
+    padding-top: 1rem;
+    width: 26%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-nav {
+    margin-right: 10rem;
+    /* border: 1px solid red; */
+    padding-top: 1rem;
+}
+
+/* page1 */
+
+.page1-img {
+    width: 100%;
+    height: 450px;
+}
+
+.font1 {
+    font-family: 'Amatica SC', sans-serif;
+}
+
+.font2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-search-bar {
+    background-color: #a61021;
+    /* Dark red background */
+    border-radius: 50px;
+    /* Rounded corners */
+    padding: 4px 15px;
+    /* Inner spacing */
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+
+
+}
+
+.custom-search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #fff;
+
+}
+
+.custom-search-bar input:focus {
+    /* outline: none;  */
+    box-shadow: none;
+}
+
+.custom-search-bar input::placeholder {
+    color: #f8dada;
+}
+
+.custom-search-bar button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.page1_heading {
+    padding-left: 1rem;
+    font-size: 2.9rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+
+/* page2 */
+.page2_heading {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.page2_para {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.page2_content {
+    /* border: 1px solid red; */
+    margin-top: -17rem;
+    width: 70%;
+}
+
+.button {
+    background-color: #a61021;
+    color: white;
+    /* font-size: 16px; */
+    padding: 0.6rem 2rem;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: 0.2s ease;
+    /* width: 25%; */
+
+}
+
+.button:hover {
+    /* transform: scale(1.05);  */
+    box-shadow: 1px 1px 10px white;
+}
+
+/* page3 */
+
+.page3 {
+    margin-top: 4rem;
+    /* border: 1px solid red; */
+}
+
+.page3_button{
+    border: 2px solid #a61021;
+    background-color: transparent;
+    color: white;
+}
+
+.page3_button:hover{
+    box-shadow: 1px 1px 10px #a61021;
+}
+
+.page3_heading {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+}
+
+.left-recipe-div {
+    /* border: 1px solid red; */
+    /* margin-top: -2rem; */
+}
+
+.right-recipe-div {
+    /* border: 1px solid red; */
+
+}
+
+.left-recipe-img {
+    /* border: 1px solid red; */
+    height: 200px;
+    transform: rotate(-40deg);
+    margin-top: -2rem;
+
+}
+
+.left-food {
+    margin-bottom: 5rem;
+}
+
+.right-food {
+    margin-bottom: 5rem;
+}
+
+
+.right-recipe-img {
+    /* border: 1px solid red; */
+    height: 200px;
+    transform: rotate(-40deg);
+    margin-top: -2rem;
+}
+
+.food-img {
+    height: 200px;
+    /* border: 1px solid red; */
+}
+
+.clock {
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    width: 70%;
+}
+
+.clock-icon {
+    margin-right: 0.2rem;
+    margin-top: -0.5rem;
+}
+
+.breakfast-icon {
+    margin-right: 0.4rem;
+    font-size: 1.3rem;
+    margin-top: 0.2rem;
+}
+
+/* footer */
+
+.footer h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.3rem;
+}
+
+.social-icons a:hover {
+    color: #a61021;
+}
+
+.copyright {
+    font-size: 0.9rem;
+}
+
+
+.category {
+    border: none;
+    background-color:#a61021;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.dropdown-menu {
+    border-radius: 8px;
+    overflow: hidden;
+    background:white;
+    border: 1px solid #a61021;
+
+}
+
+.dropdown-item {
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 12px 20px;
+    color: #a61021;
+    font-weight: 500;
+
+}
+
+.dropdown-item:hover {
+    color: #a61021;
+}
+
+.dropdown-item:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #a61021;
+    transition: width 0.3s ease;
+    border: 1px solid white;
+}
+
+.dropdown-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #a61021;
+    transition: width 0.3s ease;
+}
+
+.recipes p{
+    font-size:0.9rem;
+}
+
+
+
+
+@media (max-width: 991.98px) {
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-logo {
+        position: static;
+        transform: none;
+        /* margin-bottom: 1rem; */
+        text-align: center;
+    }
+
+    .left-nav {
+        margin: 0;
+    }
+
+    .right-nav {
+        /* margin: 0; */
+        margin-top: -1.5rem;
+    }
+
+    /* page1 */
+    .page1-img {
+        height: 200px;
+    }
+
+    .page2_heading {
+        margin-top: -2rem;
+        margin-bottom: 0rem;
+    }
+
+    .page2_content {
+        margin-top: -3rem;
+        width: 100%;
+
+    }
+
+    .clock {
+        width: 100%;
+        /* border: 1px solid white; */
+    }
+
+
+}
