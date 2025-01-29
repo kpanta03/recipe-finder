@@ -6,9 +6,6 @@
     font-family: 'Amatica SC', sans-serif;
     font-size: 1.9rem;
     /* box-shadow: 0 4px 8px white; */
-
-
-
 }
 
 .nav-link,
@@ -343,6 +340,65 @@
 .recipes p{
     font-size:0.9rem;
 }
+
+
+/* Userlogin */
+
+.bg-dark {
+    /* background-image: url('/recipe-finder/src/Assets/images/signinbackground.png');  */
+    background-size: cover; 
+    background-position: left; 
+    background-repeat: no-repeat; 
+    /* margin-top: -10rem; */
+    background-color: black;
+    
+   
+    
+  }
+
+  .custom-input {
+    background-color: transparent; 
+    border: 1px solid rgb(205, 9, 9); 
+    border-radius: 50px;
+    height: 50px;
+    color:white;
+    
+  }
+  
+  .custom-input::placeholder {
+    color: rgba(255, 255, 255, 0.7); 
+  }
+  .custom-box {
+    width: 950px;  
+    height: 550px; 
+    max-width: 100%; 
+  }
+  
+  
+  .sign-in-card {
+    width: 100%;
+    min-height: 100%;
+    border: 5px solid rgb(125, 123, 123);
+    display:flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  .btn-danger {
+    background-color: #b00020;
+    border: none;
+  }
+  
+  .btn-danger:hover {
+    background-color: #d32f2f;
+  }
+  
+  .bg-dark a {
+    font-size: 14px;
+  }
+
+
+
 
 
 

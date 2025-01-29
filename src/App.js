@@ -1,10 +1,15 @@
 
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Homepage from './Components/Homepage';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Recipes from './Components/Recipes';
+import SignIn from './Components/SignIn';
+import SignUp from './Components/SignUp';
+import Favourite from './Components/Favourite';
+
+
 
 function App() {
   return (
@@ -15,6 +20,9 @@ function App() {
         {/* Define routes for each page */}
         <Route path="/" element={<Homepage />} />
         <Route path="/recipes" element={<Recipes />} />
+          <Route path="signin" element={<SignIn />} />
+          <Route path="signup" element={<SignUp />} />
+        <Route path="/Favourite" element={<Favourite />} />
       </Routes>
       <Footer />
     </Router>

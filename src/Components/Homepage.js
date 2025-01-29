@@ -24,6 +24,7 @@ const navigate=useNavigate();
   const handleSearch = () => {
     const trimmedQuery = searchQuery.trim();
 
+
     // If the search query is empty, clear the filteredRecipes
     if (!trimmedQuery) {
       setFilteredRecipes([]);
@@ -31,7 +32,7 @@ const navigate=useNavigate();
       return;
     }
 
-    // Split the query into words and filter recipes
+    // Split the query into words and filter recipes.querywords is list of ingredients.
     const queryWords = trimmedQuery
       .toLowerCase()
       .split(',') 
@@ -53,11 +54,18 @@ const navigate=useNavigate();
     setHasSearched(true); 
   };
 
+
+
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
       handleSearch();
     }
   };
+
+
+  const popularRecipes = [...recipesData]
+    .sort((a, b) => b.favourites - a.favourites)  // Sort by favourites (highest first)
+    .slice(0, 4); // Get only the top 4
 
   
 
@@ -92,7 +100,8 @@ const navigate=useNavigate();
         </div>
       </div>
 
-            {/* Render Search Results */}
+
+           {/* Render Search Results */}
           <div className="recipes container-fluid mt-lg-4">
                       <div className="row">
                           {/* <!-- 1st recipe --> */}
@@ -103,14 +112,9 @@ const navigate=useNavigate();
                         <p className="text-center mt-4">No recipes found matching your search.</p>
                       )}
                       </div>
-                  </div>
+          </div>
 
      
-
-
-
-
-
       {/* <!-- page2 --> */}
       <div className="page2 container-fluid">
         <img src={background} alt="page2" className="page2_img img-fluid" />
@@ -126,12 +130,14 @@ const navigate=useNavigate();
         </div>
       </div>
 
+
       {/* <!-- page3 --> */}
       <div className=" container-fluid page3">
         <h1 className="font1 page3_heading text-center">
           Popular Recipes
         </h1>
-        {recipesData.map((recipe, index) => (
+        
+        {popularRecipes.map((recipe, index) => (
           (index % 2 == 0 && (
             <Recipecard
               title={recipe.title}

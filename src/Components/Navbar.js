@@ -1,12 +1,16 @@
 import React,{useEffect} from 'react'
 import './Style.css'
 import logo from "../Assets/images/logo1.png";
-import {NavLink } from "react-router-dom";
+import {NavLink,useLocation } from "react-router-dom";
 export default function Navbar() {
+
    // Feather icons will replace the placeholder <i> elements after the component mounts
   useEffect(() => {
     window.feather.replace(); // Initialize Feather icons
   }, []);
+
+  const location = useLocation();
+  const isAuthPage = location.pathname === "/signin" || location.pathname === "/signup";
 
   return (
    <>
@@ -43,10 +47,12 @@ export default function Navbar() {
 
                 <ul className="navbar-nav mb-2 mb-lg-0">
                     <li className="nav-item">
-                        <a className="nav-link" href="#"><i className="icon" data-feather="heart"></i></a>
+                        <NavLink className={({isActive})=>(isActive?"active nav-link":"nav-link")} to="/Favourite"><i className="icon" data-feather="heart"></i></NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#"><i className="icon" data-feather="user"></i></a>
+                    <NavLink className={isAuthPage ? "active nav-link" : "nav-link"} to="/SignIn">
+                  <i className="icon" data-feather="user"></i>
+                </NavLink>
                     </li>
                 </ul>
 
@@ -54,6 +60,7 @@ export default function Navbar() {
             </div>
         </div>
     </nav>
+    
 
    </>
   )
