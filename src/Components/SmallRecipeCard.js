@@ -1,10 +1,19 @@
 import React,{useEffect} from 'react'
+import { useNavigate } from 'react-router-dom';
 import "./Style.css";
 
-export default function SmallRecipeCard({ title, ingredients, time, mealType, image }) {
+export default function SmallRecipeCard({ id,title, ingredients, time, mealType, image }) {
+
+const navigate = useNavigate();
+
  useEffect(() => {
     window.feather.replace(); // Initialize Feather icons
   }, []);
+
+  const handleViewRecipe = () => {
+    // Navigate to the recipe detail page using the unique id
+    navigate(`/recipeDetail/${id}`);
+  };
 
 
     return (
@@ -30,7 +39,7 @@ export default function SmallRecipeCard({ title, ingredients, time, mealType, im
                             <p className="col-sm-12 col-6"><i className="fas fa-utensils breakfast-icon"></i>{mealType}</p>
                         </div>
 
-                        <button className="btn page3_button">view Recipe</button>
+                        <button className="btn page3_button" onClick={handleViewRecipe} >view Recipe</button>
                         <button className="btn"> <a className="nav-link" href="#"><i className="icon"
                             data-feather="heart"></i></a></button>
                     </div>

@@ -400,6 +400,131 @@
 
 
 
+  /* RecipeDetail */
+
+  .recipe-detail .recipe-img{
+    width:70%;
+}
+
+.recipe-detail .custom-heading {
+    margin-left: -6rem;
+}
+
+.recipe-detail .custom-para{
+    margin-left:-12rem;
+}
+
+.steps{
+    width: 80%;
+    padding: 0 2rem;
+}
+
+.step-number {
+  font-weight: lighter;
+  font-size: 2.5rem; 
+  color: #FFC107; 
+  width: 60px; 
+ 
+}
+
+.step-text {
+  font-size: 1.1rem;
+ 
+}
+
+.recipedetail-heading {
+  /* color: #ff6347;  */
+  color:#a61021; 
+  /* margin: 25px 0; */
+  font-size:3rem;
+  font-weight: bold;
+}
+
+
+.custom-video {
+    width: 100%;   
+    height:auto; 
+    border-radius: 10px; 
+    max-height: 300px;  
+    object-fit: cover;
+      /* Ensures the video fills the space */
+  }
+  
+  .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      background: red;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      outline: none; /* Removes focus outline */
+      border: none;  /* Ensures no default browser styling */
+      box-shadow: none; /* Removes any glow effect */
+    }
+    /* .play-button::before {
+      font-size: 30px;
+      color: white;
+      margin-left: 5px;
+      background-color:transparent;
+    } */
+    
+    video {
+      cursor: pointer;
+    }
+    
+  
+  
+  /* .position-relative {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  .chilly-right{
+      transform: scaleX(-1);
+  }
+  .recipe-card {
+   
+    padding: 30px;
+  }
+  
+  .recipe-card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px; 
+  }
+
+  .carousel-inner{
+    font-size: 0.9rem;
+}
+
+
+.carousel-item {
+    text-align: center;
+}
+
+.btn-outline-danger {
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+.carousel-control-prev{
+    margin-left: -5rem;
+}
+.carousel-control-next-icon{
+    margin-right: -6rem;
+}
+
+
+
+
+
 
 
 
@@ -443,6 +568,33 @@
     .clock {
         width: 100%;
         /* border: 1px solid white; */
+    }
+
+
+    /* recipedetail */
+    .recipe-detail .custom-heading {
+        margin-left:0px;
+    }
+
+    .recipe-detail .custom-para{
+        margin-left:0rem;
+    }
+    
+
+    .steps{
+        margin:auto;
+        width: 100%;
+    }
+
+    .recipedetail-heading {
+        font-size:2rem;
+    }
+
+    .carousel-control-prev{
+        margin-left: 0rem;
+    }
+    .carousel-control-next-icon{
+        margin-right: 0rem;
     }
 
 
